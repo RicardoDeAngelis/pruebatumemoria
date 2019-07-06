@@ -127,7 +127,7 @@ class Juego {
   }
 
   perdioElJuego(){
-    swal('Juego','Felicitaciones perdiste','error')
+    swal('Juego','Mala suerte, perdiste','error')
     .then(()=>{
         this.eliminarEventosClick()
         this.inicializar()
