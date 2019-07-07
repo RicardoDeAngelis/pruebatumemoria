@@ -130,12 +130,12 @@ class Juego {
 
   perdioElJuego(){
     //swal('Juego','Mala suerte, perdiste','error')
-    swal({
+    swal(
 title: "Juego",
 text: "Mala suerte,perdiste.",
 timer: 2000,
 showConfirmButton: false
-});
+);
     .then(()=>{
         this.eliminarEventosClick()
         this.inicializar()
