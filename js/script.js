@@ -135,7 +135,7 @@ title: "Juego",
 text: "Mala suerte,perdiste.",
 timer: 2000,
 showConfirmButton: false
-);
+)
     .then(()=>{
         this.eliminarEventosClick()
         this.inicializar()
