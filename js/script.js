@@ -104,7 +104,7 @@ class Juego {
     this.iluminarColor(nombreColor)
     if(numeroColor===this.secuencia[this.subnivel]){
       this.subnivel++
-      alert(subnivel)
+      alert(this.subnivel)
       if(this.subnivel===this.nivel){
         this.nivel++
          this.eliminarEventosClick()
