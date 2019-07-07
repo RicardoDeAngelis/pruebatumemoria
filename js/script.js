@@ -119,8 +119,10 @@ class Juego {
     }else{
       // perdio el juego
       var level=this.nivel
-      alert ('Tu nivel alcanzado es: '+level)
-      this.perdioElJuego()
+
+    alertify.success('Tu nivel alcanzado es: '+level)
+
+  this.perdioElJuego()
 
 
     }
