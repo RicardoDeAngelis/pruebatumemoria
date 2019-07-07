@@ -3,7 +3,7 @@ const violeta = document.getElementById('violeta')
 const naranja = document.getElementById('naranja')
 const verde = document.getElementById('verde')
 const btnEmpezar = document.getElementById('btnEmpezar')
-const ULTIMO_NIVEL=10
+const ULTIMO_NIVEL=20
 
 
 class Juego {
@@ -119,6 +119,8 @@ class Juego {
     }else{
       // perdio el juego
       this.perdioElJuego()
+            alert(this.nivel,'success')
+
     }
   }
   ganoElJuego(){
@@ -127,8 +129,7 @@ class Juego {
   }
 
   perdioElJuego(){
-
-    swal('Juego','Mala suerte, perdiste','error')
+   swal('Juego','Mala suerte, perdiste','error')
     .then(()=>{
         this.eliminarEventosClick()
         this.inicializar()
