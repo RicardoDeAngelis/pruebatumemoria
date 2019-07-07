@@ -3,7 +3,7 @@ const violeta = document.getElementById('violeta')
 const naranja = document.getElementById('naranja')
 const verde = document.getElementById('verde')
 const btnEmpezar = document.getElementById('btnEmpezar')
-const ULTIMO_NIVEL=10
+const ULTIMO_NIVEL=20
 
 
 class Juego {
@@ -104,6 +104,7 @@ class Juego {
     this.iluminarColor(nombreColor)
     if(numeroColor===this.secuencia[this.subnivel]){
       this.subnivel++
+      alert(subnivel)
       if(this.subnivel===this.nivel){
         this.nivel++
          this.eliminarEventosClick()
