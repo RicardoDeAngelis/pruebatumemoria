@@ -119,7 +119,7 @@ class Juego {
     }else{
       // perdio el juego
       this.perdioElJuego()
-            alert(this.nivel)
+            swal('llegaste al nivel:',this.nivel)
 
     }
   }
