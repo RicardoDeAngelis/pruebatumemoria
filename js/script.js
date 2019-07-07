@@ -119,7 +119,7 @@ class Juego {
     }else{
       // perdio el juego
       this.perdioElJuego()
-            alert(this.nivel,'success')
+            alert(this.nivel,"success")
 
     }
   }
@@ -129,13 +129,7 @@ class Juego {
   }
 
   perdioElJuego(){
-    //swal('Juego','Mala suerte, perdiste','error')
-    swal(
-title: "Juego",
-text: "Mala suerte,perdiste.",
-timer: 2000,
-showConfirmButton: false
-)
+   swal('Juego','Mala suerte, perdiste','error')
     .then(()=>{
         this.eliminarEventosClick()
         this.inicializar()
