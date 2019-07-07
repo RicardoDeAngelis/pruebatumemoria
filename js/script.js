@@ -118,22 +118,32 @@ class Juego {
 
     }else{
       // perdio el juego
+      var level=this.nivel
+      alert ('Tu nivel alcanzado es: '+level)
       this.perdioElJuego()
-            alert(this.nivel,'success')
+
 
     }
   }
   ganoElJuego(){
-    swal('Juego','Felicitaciones Ganaste','success')
+    swal('Juego','Felicitaciones Ganaste el nivel 20','success')
+
+
     .then(this.inicializar)
   }
 
   perdioElJuego(){
-   swal('Juego','Mala suerte, perdiste','error')
+
+   swal('Juego','Mala suerte, perdiste ','error')
+
     .then(()=>{
+
         this.eliminarEventosClick()
+
         this.inicializar()
+
     })
+
   }
 
 }
